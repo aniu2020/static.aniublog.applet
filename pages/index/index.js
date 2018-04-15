@@ -16,7 +16,7 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad () {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -53,6 +53,8 @@ Page({
     })
   },
   tapName:function(){
+    // this.motto = '999'//无效
+    this.setData({'motto':666})//有效
     console.log(123)
   }
 })

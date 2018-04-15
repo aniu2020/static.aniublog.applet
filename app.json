@@ -1,25 +1,33 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat666",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh":true
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首100212页",
-      "iconPath": "assets/images/nav_index_icon_cur.png",
-      "selectedIconPath": "assets/images/nav_index_icon.png"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首100212页",
+        "iconPath": "assets/images/nav_index_icon_cur.png",
+        "selectedIconPath": "assets/images/nav_index_icon.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "文章详情"
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,
