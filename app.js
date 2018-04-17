@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (res) {//当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -32,6 +32,7 @@ App({
         }
       }
     })
+    console.log(res,123) 
   },
   globalData: {
     userInfo: null
