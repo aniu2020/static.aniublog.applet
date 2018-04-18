@@ -22,4 +22,11 @@
     <view wx:for="{{array2}}">
         {{index}}: {{item.message}}
     </view>
+
+    <view wx:for="testArr">
+        index：{{index}} item.list:{{item.list}}
+        <block wx:for="item.list">
+            <!--{{index}}: {{item}}-->
+        </block>
+    </view>
 </view>

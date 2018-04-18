@@ -16,7 +16,17 @@ Page({
             message: 'foo',
         }, {
             message: 'bar'
-        }]
+        }],
+        testArr: [
+            {
+                id: 1,
+                list: [1, 2, 3]
+            },
+            {
+                id: 2,
+                list: [4, 6]
+            },
+        ]
     },
     //事件处理函数
     bindViewTap: function () {
