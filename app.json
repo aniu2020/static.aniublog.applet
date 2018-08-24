@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/detail/detail",
     "pages/index/test",
-    "pages/index/test666"
+    "pages/index/test666",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -17,7 +18,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首100212页",
+        "text": "首页2",
         "iconPath": "assets/images/nav_index_icon.png",
         "selectedIconPath": "assets/images/nav_index_icon_cur.png"
       },

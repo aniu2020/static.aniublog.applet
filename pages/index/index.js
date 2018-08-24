@@ -64,7 +64,8 @@ Page({
         }
     },
     onReady(res){
-        console.log(this.helloMINA(), 'helloMINA')
+        // console.log(this.helloMINA(), 'helloMINA')
+        // console.log('getCurrentPages',getCurrentPages())
     },
     helloMINA () {
         common.sayHello('MINA6')
@@ -81,9 +82,12 @@ Page({
         // this.motto = '999'//无效
         this.setData({'motto': 666})//有效
         console.log(123)
+        wx.navigateTo({
+            url: '../test?id=1'
+        })
     },
     onPageScroll(res){
-        console.log(res, 'onPageScroll')
+        // console.log(res, 'onPageScroll')
     },
     goTest(){
         console.log(9999)

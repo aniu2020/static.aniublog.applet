@@ -1,14 +1,18 @@
 //app.js
 App({
   onLaunch: function (res) {//当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
+      // Launch/lɔːntʃ/（落去）发射；发行，投放市场；
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
+      // console.log('onLaunch-logs',logs)
     logs.unshift(Date.now())
+      //unshift /ʌn'ʃɪft/ （安徐福次）
     wx.setStorageSync('logs', logs)
 
     // 登录
     wx.login({
       success: res => {
+          // console.log('login-res',res)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -32,7 +36,7 @@ App({
         }
       }
     })
-    console.log(res,123) 
+    // console.log('onLaunch-res',res)
   },
   globalData: {
     userInfo: null
